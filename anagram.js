@@ -1,9 +1,9 @@
+var entered = "";
+
 function enterText(){
-    var text = document.getElementById("anagram").value;
-    alert(text);
+    entered = document.getElementById("anagram").value;
+    console.log(entered);
 };
 
-
-
-
-
+var arr = entered.split("");
+console.log(arr);
