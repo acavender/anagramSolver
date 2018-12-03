@@ -13,9 +13,9 @@
     <p>Working a Jumble or a similar anagram puzzle, and find yourself stuck? This anagram solver can help for words of at least three and not more than ten letters. (English only, at least for now.)</p>
     <form id="textentry">
         <label for="anagram">Enter three to 10 letters:</label>
-        <input id="anagram" type="text" placeholder="Enter text" pattern=[A-Za-z]{3,10}>
+        <input id="anagram" name="entry" type="text" placeholder="Enter text" pattern=[A-Za-z]{3,10} onchange="setText()">
         <!-- <button id="submitText" value="send">Submit</button> -->
-        <button id="submitText" value="send" onclick="enterText()">Submit</button>
+        <button id="submitText" value="send" onclick="setText()">Submit</button>
     </form>
 </body>
 </html>

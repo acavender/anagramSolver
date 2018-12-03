@@ -1,9 +1,10 @@
-var entered = "";
+// My problem is probably a missing event listener
+var entered = "test";
 
-function enterText(){
-    entered = document.getElementById("anagram").value;
-    console.log(entered);
-};
-
-var arr = entered.split("");
-console.log(arr);
+function setText() {
+    var x = document.getElementsByName("entry").value;
+    entered = x;
+    return entered;
+}
+setText();
+console.log(entered);
