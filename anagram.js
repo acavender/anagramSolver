@@ -1,13 +1,10 @@
-let entered = "";
-let clicked = document.getElementById("buttonclick");
+var enteredText = "";
 
 function setText() {
-    let entered = document.getElementById("anagram").value;
-    return entered;
+    entered = document.getElementById("anagram").value;
 }
 
-clicked.onclick = function() {
-    alert(setText());
-    let confirmed = document.getElementById("confirmation");
-    confirmed.innerHTML = "You entered " + setText();
-}
+
+
+var confirm = document.getElementById("confirmation");
+confirm.innerHTML = "You entered " + enteredText + "<br>";
