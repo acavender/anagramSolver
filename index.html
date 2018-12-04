@@ -8,14 +8,14 @@
     <link rel="stylesheet" type="text/css" media="screen" href="anagram.css" />
 </head>
 <body>
-    <script src="anagram.js"></script>
     <h1>Anagram Solver</h1>
     <p>Working a Jumble or a similar anagram puzzle, and find yourself stuck? This anagram solver can help for words of at least three and not more than ten letters. (English only, at least for now.)</p>
     <form id="textentry">
-        <label for="anagram">Enter three to 10 letters:</label>
-        <input id="anagram" name="entry" type="text" placeholder="Enter text" pattern=[A-Za-z]{3,10} onchange="setText()">
-        <!-- <button id="submitText" value="send">Submit</button> -->
-        <button id="submitText" value="send" onclick="setText()">Submit</button>
+        <label for="anagram">Enter 3 to 10 letters:</label>
+        <input id="anagram" name="entry" type="text" placeholder="Enter text" pattern=[A-Za-z]{3,10}>
+        <input id="buttonclick" type="submit" value="submit" onclick="setText()">
     </form>
+    <p id="confirmation"></p>
+    <script src="anagram.js"></script>
 </body>
 </html>

@@ -1,10 +1,13 @@
-// My problem is probably a missing event listener
-var entered = "test";
+let entered = "";
+let clicked = document.getElementById("buttonclick");
 
 function setText() {
-    var x = document.getElementsByName("entry").value;
-    entered = x;
+    let entered = document.getElementById("anagram").value;
     return entered;
 }
-setText();
-console.log(entered);
+
+clicked.onclick = function() {
+    alert(setText());
+    let confirmed = document.getElementById("confirmation");
+    confirmed.innerHTML = "You entered " + setText();
+}
