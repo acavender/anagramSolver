@@ -6,6 +6,7 @@
     <title>Anagram Solver</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="anagram.css" />
+
 </head>
 <body>
     <h1>Anagram Solver</h1>
@@ -13,9 +14,8 @@
     <form id="textentry">
         <label for="anagram">Enter 3 to 10 letters:</label>
         <input id="anagram" name="entry" type="text" placeholder="Enter text" pattern=[A-Za-z]{3,10}>
-        <input id="buttonclick" type="submit" value="submit" onclick="setTimeout(setText(), 10000)">
-    </form>
-    <p id="confirmation"></p>
+        <input id="buttonclick" type="submit" value="submit" onclick="setText()">
+    </form> 
     <script type= "text/javascript" src="anagram.js"></script>
 </body>
 </html>
