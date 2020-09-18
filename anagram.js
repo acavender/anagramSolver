@@ -1,2 +1,5 @@
-var entry = document.getElementById("anagram").value;
-alert(entry.value);
+function getentry() {
+    var entry = document.getElementById("anagram")[0].value;
+    return entry;
+}
+alert(entry);
