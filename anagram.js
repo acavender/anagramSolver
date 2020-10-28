@@ -5,4 +5,4 @@ function getEntry() {
 }
 
 var jumble = getEntry();
-alert("Jumble is " + jumble);
+console.log(jumble);
