@@ -1,5 +1,8 @@
-function getentry() {
-    var entry = document.getElementById("anagram")[0].value;
+function getEntry() {
+    var entry = document.getElementById("anagram").value;
+    alert(entry);
     return entry;
 }
-alert(entry);
+
+var jumble = getEntry();
+alert("Jumble is " + jumble);

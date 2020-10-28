@@ -6,16 +6,15 @@
     <title>Anagram Solver</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="anagram.css" />
-    <script type= "text/javascript" src="anagram.js"></script>
+    <script language="JavaScript" type= "text/javascript" src="anagram.js" defer></script>
 </head>
 <body>
     <h1>Anagram Solver</h1>
     <p>Working a Jumble or a similar anagram puzzle, and find yourself stuck? This anagram solver can help for words of at least three and not more than ten letters. (English only, at least for now.)</p>
-    <form id="textentry">
+    <form action="" id="textentry" onsubmit="getEntry()">
         <label for="anagram">Enter 3 to 10 letters:</label>
-        <input id="anagram" name="entry" type="text" placeholder="Enter text" pattern=[A-Za-z]{3,10} onchange="getentry()">
-        <button>Submit</button>
+        <input id="anagram" name="entry" type="text" placeholder="Enter text" minlength="3" maxlength="10" required>
+        <button type="submit">Submit</button>
     </form>
-    
 </body>
 </html>
