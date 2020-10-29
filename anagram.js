@@ -16,3 +16,8 @@ console.log(working);
 (2) Check those combinations agains an English-language dictionary using an API
 (3) Keep track of any words that can be formed from the letters of the jumble
 (4) Write all the words that can be made to the HTML document */
+
+function showResults() {
+    document.getElementById("results").innerHTML = "working";
+}
+
